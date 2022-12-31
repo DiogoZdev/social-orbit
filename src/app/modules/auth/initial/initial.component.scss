@@ -11,12 +11,7 @@
   transform: translate(10%, 10%);
 
   img {
-    filter: 
-      invert(65%)
-      sepia(100%)
-      hue-rotate(200deg)
-      saturate(5000%)
-      brightness(30%);
+    filter: var(--svg-fill)
   }
 }
 
