@@ -2,7 +2,8 @@
 
 > Project built with Angular 13. It aims to be a social network for deisgner and developers share their work and texts. It will work as a portfolio and a blog.
 
-### Work in progress
+### Work in progress!
+
 
 The project is a work in progress, these are my tasks:
 
@@ -23,3 +24,5 @@ Before starting, make sure to have Node installed.
 5. Create a pull request.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+![Orbit](https://user-images.githubusercontent.com/56682712/210123429-97eea1ee-ece8-4b95-8b90-3279fd5bfc38.png)
