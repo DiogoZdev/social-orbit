@@ -97,3 +97,14 @@ body.gold {
     saturate(5000%)
     brightness(30%);
 }
+
+body.green {
+  --accent: var(--green-500);
+  --gradient: linear-gradient(10deg, var(--green-400), var(--green-900));
+  --svg-fill: 
+    invert(65%)
+    sepia(100%)
+    hue-rotate(40deg)
+    saturate(5000%)
+    brightness(30%);
+}

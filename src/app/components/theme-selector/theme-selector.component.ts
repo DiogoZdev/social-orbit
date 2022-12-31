@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 type Theme = "light" | "dark";
-type Accent = "blue" | "red" | "gold";
+type Accent = "blue" | "red" | "green" | "gold";
 
 @Component({
   selector: 'orb-theme-selector',
@@ -35,6 +35,7 @@ export class ThemeSelectorComponent implements OnInit {
     document.body.classList.remove('blue');
     document.body.classList.remove('red');
     document.body.classList.remove('gold');
+    document.body.classList.remove('green');
     document.body.classList.add(accent);
     localStorage.setItem('accent', accent)
   }

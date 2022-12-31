@@ -1,30 +1,48 @@
-<h1>Orbit</h1>
+<h1>Dev Orbitz</h1>
 
-<form [formGroup]="loginForm" class="form-login">
-  <div class="form-input-area">
-    <input matInput formControlName="username" type="text" placeholder=" ">
-    <label for="username">Username</label>
-  </div>
+<div class="wrapper">
 
-  <div class="form-input-area">
-    <input matInput formControlName="password" type="password" placeholder=" ">
-    <label for="password">Senha</label>
-  </div>
-
+  <form [formGroup]="loginForm" class="form-login">
+    <div class="form-input-area" *ngIf="!isLoginForm">
+      <input matInput formControlName="name" type="text" placeholder=" ">
+      <label for="username">Nome</label>
+    </div>
+    
+    <div class="form-input-area" *ngIf="!isLoginForm">
+      <input matInput formControlName="surname" type="text" placeholder=" ">
+      <label for="username">Sobrenome</label>
+    </div>
+  
+    <div class="form-input-area">
+      <input matInput formControlName="username" type="text" placeholder=" ">
+      <label for="username">Username</label>
+    </div>
+  
+    <div class="form-input-area">
+      <input matInput formControlName="password" type="password" placeholder=" ">
+      <label for="password">Senha</label>
+    </div>
+  
+    <div class="form-input-area" *ngIf="!isLoginForm">
+      <input matInput formControlName="repeatPassword" type="password" placeholder=" ">
+      <label for="username">Confirmar Senha</label>
+    </div>
+  </form>
+  
   <div class="buttons">
-
+  
     <orb-button
-      buttonText="cadastrar"
-      buttonClass="secondary"
-      (clickEmitter)="register()"
-    ></orb-button>
-
-    <orb-button
-      buttonText="login"
+      [buttonText]="isLoginForm ? 'login' : 'criar'"
       buttonClass="primary"
-      (clickEmitter)="login()"
+      (clickEmitter)="mainAction()"
+    ></orb-button>
+  
+    <orb-button
+      [buttonText]="isLoginForm ? 'cadastrar' : 'fazer login'"
+      buttonClass="secondary"
+      (clickEmitter)="toggleRegister()"
     ></orb-button>
     
   </div>
 
-</form>
+</div>

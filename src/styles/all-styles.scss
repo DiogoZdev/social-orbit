@@ -33,7 +33,6 @@ p, li, a {
 .form-input-area {
   position: relative;
   width: 100%;
-  max-width: 300px;
   height: 40px;
   
   label {
@@ -55,6 +54,11 @@ p, li, a {
     background: var(--bg-200);
     color: var(--text-color);
     font-size: var(--font-lg);
+    border-bottom: 3px solid transparent;
+
+    &:invalid {
+      border-bottom: 3px solid var(--red-600);
+    }
   }
 
   & > input:not(:placeholder-shown) + label,
