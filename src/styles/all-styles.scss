@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@use './colors.scss';
+@use './sizes.scss';
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;;
+}
+
+img {
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: audiowide !important; 
+}
+
+p, li, a {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* RULES FOR TEMPORARY COMPONENT */
+.form-input-area {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  
+  label {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    width: inherit;
+    height: inherit;
+    color: var(--text-color);
+    transition: ease 300ms;
+    line-height: 3;
+    padding-left: 1ch;
+  }
+
+  input {
+    width: inherit;
+    height: inherit;
+    padding: 0 1ch;
+    background: var(--bg-200);
+    color: var(--text-color);
+    font-size: var(--font-lg);
+  }
+
+  & > input:not(:placeholder-shown) + label,
+  input:focus + label {
+    transform: translateY(-50%);
+    color: var(--accent);
+    line-height: 1;
+    padding-left: 0;
+  }
+}

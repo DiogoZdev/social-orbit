@@ -1,0 +1,30 @@
+<h1>Orbit</h1>
+
+<form [formGroup]="loginForm" class="form-login">
+  <div class="form-input-area">
+    <input matInput formControlName="username" type="text" placeholder=" ">
+    <label for="username">Username</label>
+  </div>
+
+  <div class="form-input-area">
+    <input matInput formControlName="password" type="password" placeholder=" ">
+    <label for="password">Senha</label>
+  </div>
+
+  <div class="buttons">
+
+    <orb-button
+      buttonText="cadastrar"
+      buttonClass="secondary"
+      (clickEmitter)="register()"
+    ></orb-button>
+
+    <orb-button
+      buttonText="login"
+      buttonClass="primary"
+      (clickEmitter)="login()"
+    ></orb-button>
+    
+  </div>
+
+</form>

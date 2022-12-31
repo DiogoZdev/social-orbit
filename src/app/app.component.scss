@@ -1,0 +1,9 @@
+.theme {
+  position: absolute;
+  z-index: 900;
+  right: 1rem;
+  top: 1rem;
+  background-color: transparent !important;
+  color: var(--text-color);
+  cursor: pointer;
+}
