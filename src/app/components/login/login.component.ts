@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'orb-login',
+  selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
@@ -32,7 +32,6 @@ export class LoginComponent implements OnInit {
   setRegisterForm() {
     this.loginForm = this.formBuilder.group({
       name: ["", Validators.required],
-      surname: ["", Validators.required],
       username: ["", [Validators.required, Validators.minLength(8)]],
       password: ["", [Validators.required, Validators.minLength(8)]],
       repeatPassword: ["", [Validators.required, Validators.minLength(8)]]

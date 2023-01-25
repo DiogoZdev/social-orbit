@@ -4,13 +4,13 @@ type Theme = "light" | "dark";
 type Accent = "blue" | "red" | "green" | "gold";
 
 @Component({
-  selector: 'orb-theme-selector',
+  selector: 'app-theme-selector',
   templateUrl: './theme-selector.component.html',
   styleUrls: ['./theme-selector.component.scss']
 })
 export class ThemeSelectorComponent implements OnInit {
 
-  isMenuOpened = false;
+  public isMenuOpened = false;
 
   ngOnInit() {
     const theme = localStorage.getItem('theme') as Theme;

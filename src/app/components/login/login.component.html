@@ -7,11 +7,6 @@
       <input matInput formControlName="name" type="text" placeholder=" ">
       <label for="username">Nome</label>
     </div>
-    
-    <div class="form-input-area" *ngIf="!isLoginForm">
-      <input matInput formControlName="surname" type="text" placeholder=" ">
-      <label for="username">Sobrenome</label>
-    </div>
   
     <div class="form-input-area">
       <input matInput formControlName="username" type="text" placeholder=" ">
@@ -31,17 +26,17 @@
   
   <div class="buttons">
   
-    <orb-button
+    <app-button
       [buttonText]="isLoginForm ? 'login' : 'criar'"
       buttonClass="primary"
       (clickEmitter)="mainAction()"
-    ></orb-button>
+    ></app-button>
   
-    <orb-button
+    <app-button
       [buttonText]="isLoginForm ? 'cadastrar' : 'fazer login'"
       buttonClass="secondary"
       (clickEmitter)="toggleRegister()"
-    ></orb-button>
+    ></app-button>
     
   </div>
 

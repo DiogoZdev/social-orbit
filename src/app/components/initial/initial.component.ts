@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'orb-initial',
+  selector: 'app-initial',
   templateUrl: './initial.component.html',
   styleUrls: ['./initial.component.scss']
 })
