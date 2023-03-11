@@ -1,7 +1,29 @@
 nav {
-  display: flex;
-  justify-content: space-between;
+  
   padding: var(--space-md );
   background-color: var(--bg-100);
   color: var(--text-color);
+
+  .center {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .links {
+      display: flex;
+      gap: var(--space-lg);
+
+      a {
+        color: unset;
+        text-decoration: unset;
+      }
+
+      li {
+        font-size: var(--text-md);
+        list-style: none;
+      }
+    }
+  }
 }

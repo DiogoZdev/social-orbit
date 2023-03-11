@@ -1,7 +1,19 @@
 <nav>
-  <div>?</div>
-  <div>links</div>
-  <div>
-    <app-theme-selector></app-theme-selector>
+  <div class="center">
+
+    <div>
+      <div class="form-input-area">
+        <input matInput formControlName="pesquisa" type="text" placeholder="Pesquisa ...">
+      </div>
+    </div>
+    <ul class="links">
+      <a [href]="link.url" *ngFor="let link of links">
+        <li>{{ link.displayName }}</li>
+      </a>
+    </ul>
+    <div>
+      <app-theme-selector></app-theme-selector>
+    </div>
+
   </div>
 </nav>

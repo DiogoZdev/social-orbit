@@ -1,0 +1,38 @@
+header {
+  width: 100%;
+  height: 250px;
+  background: var(--gradient);
+
+  .background-gradient {
+    height: inherit;
+    background: linear-gradient(to top, #000a, #0000);
+  }
+
+  .center {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    height: inherit;
+    padding: var(--space-md);
+
+    .image-area {
+      position: absolute;
+      bottom: -75px;
+      left: 60px;
+      width: 150px;
+      aspect-ratio: 1;
+      background-color: bisque;
+    }
+
+    .user-info-area {
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      left: 230px;
+
+      h1, h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
