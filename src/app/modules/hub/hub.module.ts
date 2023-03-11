@@ -1,6 +1,5 @@
-import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import { SharedComponentsModule } from "src/app/components/shared-components.modules";
 import { TopMenuComponent } from "src/app/components/top-menu/top-menu.component";
 import { HubRoutingModule } from "./hub.routing.module";
 import { HomeComponent } from './pages/home/home.component';
@@ -14,6 +13,7 @@ import { HomeComponent } from './pages/home/home.component';
     ],
     imports: [
         HubRoutingModule,
+        SharedComponentsModule,
     ]
 })
 export class HubModule {

@@ -1,9 +1,4 @@
 .wrapper {
-  position: absolute;
-  z-index: 900;
-
-  top: 1rem;
-  right: 1rem;
 
   button {
     background-color: unset;
@@ -19,8 +14,8 @@
   .menu {
     position: absolute;
     padding: 1rem;
-    top: -1rem;
-    right: -1rem;
+    top: 1rem;
+    right: 1rem;
     width: 250px;
     height: 200px;
     background-color: var(--bg-200);
